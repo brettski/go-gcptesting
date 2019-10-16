@@ -35,13 +35,13 @@ jobs:
     needs: build
     
     steps:
-      - uses: actions/gcloud/auth@master
       - name: GCP Authentication
+        uses: actions/gcloud/auth@master
         with:
           GCLOUD_AUTH: ${{ secrets.GCP_CLOUD_AUTH }}
         
-      - uses: actions/gcloud/cli@master
       - name: List Functions
+        uses: actions/gcloud/cli@master
         with:
           args: functions list
                   

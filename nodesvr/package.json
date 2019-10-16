@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/brettski/go-gcptesting/issues"
   },
-  "homepage": "https://github.com/brettski/go-gcptesting#readme"
+  "homepage": "https://github.com/brettski/go-gcptesting#readme",
+  "dependencies": {
+    "escape": "0.0.1"
+  }
 }

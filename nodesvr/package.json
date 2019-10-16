@@ -1,0 +1,24 @@
+{
+  "name": "nodesvr",
+  "version": "0.0.1",
+  "description": "Testing GCP Cloud goo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettski/go-gcptesting.git"
+  },
+  "keywords": [
+    "gcp",
+    "node",
+    "go"
+  ],
+  "author": "Brett Slaski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brettski/go-gcptesting/issues"
+  },
+  "homepage": "https://github.com/brettski/go-gcptesting#readme"
+}

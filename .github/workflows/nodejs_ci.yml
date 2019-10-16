@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: GCP Authentication
         uses: actions/gcloud/auth@master
-        with:
+        env:
           GCLOUD_AUTH: ${{ secrets.GCP_CLOUD_AUTH }}
         
       - name: List Functions

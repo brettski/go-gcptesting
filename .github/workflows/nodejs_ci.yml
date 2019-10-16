@@ -39,12 +39,10 @@ jobs:
         uses: actions/gcloud/auth@master
         env:
           GCLOUD_AUTH: ${{ secrets.GCP_CLOUD_AUTH }}
-          CLOUDSDK_CORE_PROJECT: Brettski-Learning-GCP
+          CLOUDSDK_CORE_PROJECT: brettski-learning-gcp
         
       - name: List Functions
         uses: actions/gcloud/cli@master
-        env:
-          CLOUDSDK_CORE_PROJECT: Brettski-Learning-GCP
         with:
           args: functions list
                   

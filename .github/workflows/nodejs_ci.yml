@@ -29,3 +29,20 @@ jobs:
         npm test
       env:
         CI: true
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    
+    steps:
+      - uses: actions/gcloud/auth@master
+      - name: GCP Authentication
+        with:
+          GCLOUD_AUTH: ${{ secrets.GCP_CLOUD_AUTH }}
+        
+      - uses: actions/gcloud/cli@master
+      - name: List Functions
+        with:
+          args: functions list
+                  
+      

@@ -42,6 +42,8 @@ jobs:
         
       - name: List Functions
         uses: actions/gcloud/cli@master
+        env:
+          CLOUDSDK_CORE_PROJECT: Brettski-Learning-GCP
         with:
           args: functions list
                   

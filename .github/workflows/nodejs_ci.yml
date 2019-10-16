@@ -4,6 +4,7 @@ on:
   push:
     paths: 
       - 'nodesvr/**'
+      - '.github/workflows/nodejs_ci.yml'
 
 jobs:
   build:

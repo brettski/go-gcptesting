@@ -52,4 +52,4 @@ jobs:
         env:
           CLOUDSDK_CORE_PROJECT: brettski-learning-gcp
         with:
-          args: functions deploy getUSome --runtime nodejs10 --trigger-http --source ./nodesvr
+          args: functions deploy getUSome --runtime nodejs10 --trigger-http --source $PWD/nodesvr

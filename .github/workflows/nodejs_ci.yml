@@ -47,4 +47,7 @@ jobs:
         with:
           args: functions list
                   
-      
+      - name: Deploy Function getUSome
+        uses: actions/gcloud/cli@master
+        with:
+          args: functions deploy getUSome --runtime nodejs10 --trigger-http

@@ -35,8 +35,8 @@ jobs:
 #    needs: build
     
 #    steps:
-    - name: Check out code
-      uses: actions/checkout@1
+#    - name: Check out code
+#      uses: actions/checkout@1
     - name: GCP Authentication
       uses: actions/gcloud/auth@master
       env:

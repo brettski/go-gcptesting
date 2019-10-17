@@ -49,5 +49,7 @@ jobs:
                   
       - name: Deploy Function getUSome
         uses: actions/gcloud/cli@master
+        env:
+          CLOUDSDK_CORE_PROJECT: brettski-learning-gcp
         with:
           args: functions deploy getUSome --runtime nodejs10 --trigger-http

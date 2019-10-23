@@ -27,4 +27,4 @@ const getUSome = (req, res) => {
     }
 }
 
-exports.getUSome = functions.https.onRequest(getUSome)
+exports.getUSomeMore = functions.https.onRequest(getUSome)

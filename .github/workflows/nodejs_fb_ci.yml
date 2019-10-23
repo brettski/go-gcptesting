@@ -2,8 +2,9 @@ name: FBFunc CI
 
 on:
   push:
-    - 'fbfunc/**'
-    - '.github/workflows/nodejs_fb_ci.yml'
+    paths:
+      - 'fbfunc/**'
+      - '.github/workflows/nodejs_fb_ci.yml'
 
 jobs:
   build:

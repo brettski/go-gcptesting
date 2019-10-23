@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +17,7 @@ jobs:
       uses: actions/setup-node@master
       with:
         node-version: 10.x
-    - name: npm install, build, and test
+    - name: npm install, build, and test the functions
       working-directory: ./functions
       run: |
         npm ci
@@ -24,6 +25,10 @@ jobs:
         npm test
       env:
         CI: true
+    - name: Where we are
+      run: |
+        echo $PWD
+        ls -lasi
     - name: Deploy to Firebase
       uses: w9jds/firebase-action@master 
       with:
